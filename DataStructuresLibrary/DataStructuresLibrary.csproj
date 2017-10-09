@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BothWayLinkedList.cs" />
+    <Compile Include="Calendar.cs" />
+    <Compile Include="DatePriorityQueue.cs" />
     <Compile Include="NPathTree.cs" />
     <Compile Include="ParametricBothLinkedList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
