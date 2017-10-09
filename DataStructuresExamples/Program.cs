@@ -11,23 +11,52 @@ namespace DataStructuresExamples
     {
         static void Main(string[] args)
         {
-            BothWayLinkedList list = new BothWayLinkedList();
+            NPathTree<char> nPath = new NPathTree<char>();
+            //nPath.InitExample();
+            nPath.WidthPrint();
+
+            ParametricBothLinkedList<int> whateverList = new ParametricBothLinkedList<int>();
+
+
+
+            ParametricBothLinkedList<int> list = new ParametricBothLinkedList<int>();
             list.InsertFirst(1);
             list.InsertFirst(2);
             list.InsertFirst(4);
             list.InsertFirst(3);
             list.InsertLast(0);
-            BothWayLinkedList.Node last= list.AccessLast();
+            ParametricBothLinkedList<int>.Node last = list.AccessLast();
             list.InsertAfter(last, 6);
             list.InsertBefore(list.AccessFirst(), 11);
             //list.EraseFirst();
             //list.EraseLast();
-            BothWayLinkedList.Node someNode = list.AccessFirst().Next;
+            ParametricBothLinkedList<int>.Node someNode = list.AccessFirst().Next;
             list.EraseAfter(someNode);
             list.EraseBefore(someNode);
 
             bool isEmpty = list.IsEmpty();
             uint size = list.Size;
+
+
+
+            //BothWayLinkedList list = new BothWayLinkedList();
+            //list.InsertFirst(1);
+            //list.InsertFirst(2);
+            //list.InsertFirst(4);
+            //list.InsertFirst(3);
+            //list.InsertLast(0);
+            //BothWayLinkedList.Node last = list.AccessLast();
+            //list.InsertAfter(last, 6);
+            //list.InsertBefore(list.AccessFirst(), 11);
+            ////list.EraseFirst();
+            ////list.EraseLast();
+            //BothWayLinkedList.Node someNode = list.AccessFirst().Next;
+            //list.EraseAfter(someNode);
+            //list.EraseBefore(someNode);
+
+            //bool isEmpty = list.IsEmpty();
+            //uint size = list.Size;
+
 
 
         }
